@@ -1,0 +1,205 @@
+<!-- SIDEBAR -->
+<section id="sidebar" [ngClass]="status ? 'hide' : ''">
+  <a href="#" class="brand">
+    <i (click)="addToggle()" class='bx bxs-briefcase'></i>
+    <span class="text">Logo</span>
+  </a>
+  <ul class="side-menu top">
+    <li class="active">
+      <a href="#">
+        <i class='bx bxs-dashboard' ></i>
+        <span class="text">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-shopping-bag-alt' ></i>
+        <span class="text">Classes</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-doughnut-chart' ></i>
+        <span class="text">Resources</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-calendar-edit' ></i>
+        <span class="text">Learning plan</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="notification">
+        <i class='bx bxs-chat'></i>
+        <span class="num">4</span>
+        <span class="text">Chat</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bxs-cog' ></i>
+        <span class="text">Settings</span>
+      </a>
+    </li>
+  
+    <br><br><br><br><br><br><br><br><br><br><br>
+    
+    <li>
+      <a href="#">
+        <i class='bx bxs-analyse' ></i>
+        <button class="upgrade-button" type="onclick" value="upgrade">Upgrade</button>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+
+<!-- SIDEBAR -->
+<!-- CONTENT --> 
+
+<section id="content">
+
+<!-- NAVBAR -->
+
+  <nav>
+    <i (click)="addToggle()" class='bx bx-menu'></i>
+    <form action="#">
+      <div class="form-input">
+        <input type="search" placeholder="Search...">
+        <button type="button" class="search-btn"><i class='bx bx-search' ></i></button>
+      </div>
+    </form>
+      <a href="#" class="nav-link" routerLink="/logout" routerLinkActive="active">Logout
+      <i class='bx bxs-log-out-circle'></i>
+      </a>
+  </nav>
+  
+</section>
+<!-- NAVBAR -->
+  <!-- MAIN -->
+  <section id="content">
+  <main>
+    <div class="head-title">
+      <div class="left">
+        <h2>Dashboard</h2>
+      </div>
+      <a href="#" class="search-btn">
+        <span><input type="date" bo>
+        <button type="button" search-btn><i class='bx bx-search' ></i></button>   
+        </span>
+      </a>
+    </div>
+    
+    <div class="table-data">
+      <div class="result">
+        <div class="head">
+          <h3>Latest Results</h3>
+          <p>Menu</p>
+          <i class='bx bx-right-arrow-alt' ></i>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <p>Unit 5<a href="#" class="latest-result">-Technology</a></p>
+              </td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Unit 12<a href="#" class="latest-result">-Ecology</a></p>
+              </td>
+              <td><span class="status notyet-started">Notyet</span></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Unit 9<a href="#" class="latest-result">-Real estate</a></p>
+              </td>
+              <td><span class="status pending">pending</span></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Unit 8<a href="#" class="latest-result">-Education</a></p>
+              </td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Unit 16<a href="#" class="latest-result">-Job Market</a></p>
+              </td>
+              <td><span class="status process">process</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="time-spent">
+        <div class="head">
+          <h3>Time spent on learning</h3>
+          <p>Last week</p>
+          <i class='bx bx-right-arrow-alt' ></i>
+        </div>
+        <ul class="date-list">
+          <li class="completed">
+            <p>Mon</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Tue</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="not-completed">
+            <p>Wed</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="completed">
+            <p>Thu</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="notyet-started">
+            <p>Fri</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="not-completed">
+            <p>Sat</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+          <li class="not-completed">
+            <p>Sun</p>
+            <i class='bx bx-dots-vertical-rounded' ></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="left">
+      <h3>Your Courses</h3>
+    <ul class="box-info">
+      <li>
+        <i class='bx bxs-calendar-check' ></i>
+        <span class="text">
+          <p>Business English</p>
+          <h4>Grammar</h4>
+        </span>
+      </li>
+      <li>
+        <i class='bx bxs-group' ></i>
+        <span class="text">
+          <p>Common English</p>
+          <h4>Phrasal verbs</h4>
+        </span>
+      </li>
+      <li>
+        <i class='bx bxs-dollar-circle' ></i>
+        <span class="text">
+          <p>Business Spanish</p>
+          <h4>Vocabulary</h4>
+        </span>
+      </li>
+    </ul>
+    </div>
+  </main>
+  <!-- MAIN -->
+</section>
+<!-- CONTENT -->
