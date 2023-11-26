@@ -10,7 +10,7 @@ Design dashboard using Angular, HTML5, CSS3, BOOTSTRAP and add Routing to the me
 
 
 ### How to run function app on local manchine 
-Run the 'ng serve' for a dev serve
+Run the `ng serve` for a dev serve
 
 func start # http://localhost:4200/
 
